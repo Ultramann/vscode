@@ -2,13 +2,13 @@
 $ make help
 
 General
-  help                  Display this help text
+  help                 Display this help text
 
 Setup
-  setup                 Build custom extension, install all extensions, link config files
+  setup                Build custom extension, install all extensions, link config files
 
 Extensions
-  extension             Build and install custom extension
-  extension-list        Write extension list to extensions.txt
-  install-extensions    Install extensions in extensions.txt
+  extension-custom     Build and install custom extension
+  extensions-list      Write external extensions list to extensions.txt
+  extensions-install   Install external extensions in extensions.txt
 ```
