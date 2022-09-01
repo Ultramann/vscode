@@ -1,4 +1,4 @@
-```sh
+```txt
 $ make help
 
 General
