@@ -5,7 +5,7 @@ General
   help                  Display this help text
 
 Setup
-  setup                 Build and install custom extension link config files
+  setup                 Build custom extension, install all extensions, link config files
 
 Extensions
   extension             Build and install custom extension
