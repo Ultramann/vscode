@@ -54,6 +54,8 @@
     },
 
     // --- PACKAGES ---
+    // Spell check
+    "cSpell.enabled": false,
     // Date & Time
     "dateTime.customFormat": "ddd MMM Do   h:mm a",
     // Todo
@@ -269,6 +271,15 @@
         },
         {
             "before": [
+                "R"
+            ],
+            "commands": [
+                "editor.action.rename"
+            ],
+            "silent": true
+        },
+        {
+            "before": [
                 "U"
             ],
             "commands": [
@@ -399,6 +410,16 @@
         {
             "before": [
                 "g",
+                "f"
+            ],
+            "commands": [
+                "editor.action.quickFix"
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "g",
                 "i"
             ],
             "commands": [
@@ -432,26 +453,6 @@
             ],
             "commands": [
                 "testing.runAtCursor"
-            ],
-            "silent": true
-        },
-        {
-            "before": [
-                "g",
-                "T"
-            ],
-            "commands": [
-                "testing.debugAtCursor"
-            ],
-            "silent": true
-        },
-        {
-            "before": [
-                "g",
-                "T"
-            ],
-            "commands": [
-                "testing.debugAtCursor"
             ],
             "silent": true
         },
@@ -691,6 +692,15 @@
             "icon": "search",
             "commands": [
                 "workbench.action.quickOpen",
+            ]
+        },
+        {
+            "keys": "f.s",
+            "type": "commands",
+            "name": "Spell check",
+            "icon": "check",
+            "commands": [
+                "cSpell.toggleEnableSpellChecker",
             ]
         },
         {

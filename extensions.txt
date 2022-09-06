@@ -13,6 +13,7 @@ ms-python.python
 ms-python.vscode-pylance
 redhat.vscode-yaml
 rid9.datetime
+streetsidesoftware.code-spell-checker
 thesofakillers.vscode-pbtxt
 vscodevim.vim
 vspacecode.vspacecode
