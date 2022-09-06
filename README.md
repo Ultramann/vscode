@@ -4,8 +4,9 @@ $ make help
 General
   help                 Display this help text
 
-Setup
+Lifecycle
   setup                Build custom extension, install all extensions, link config files
+  update               Update extension list, alias for extensions-list
 
 Extensions
   extension-custom     Build and install custom extension
