@@ -37,6 +37,11 @@
 		"when": "editorFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
 	},
 	{
+		"key": "escape",
+		"command": "magit.quit",
+		"when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
+	},
+	{
 		"key": "x",
 		"command": "magit.discard-at-point",
 		"when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"

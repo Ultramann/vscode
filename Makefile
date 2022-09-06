@@ -3,10 +3,12 @@ help:  ## Display this help text
 	@grep -hE '(^[a-zA-Z_%\-]+:.*?## .*$$|^##@.*)' $(MAKEFILE_LIST) | sed s/-default// | awk 'BEGIN {FS = ":.*##";} /^[a-zA-Z_+0-9-]+:.*?##/ { printf "  \033[33m%-19s\033[0m %s\n", $$1, $$2 } /^##@/ { printf "\n\033[1m%s\033[0m\n", substr($$0, 5) } END{print ""}'
 
 ##@ Lifecycle
-setup: extension-custom extensions-install  ## Build custom extension, install all extensions, link config files
+link:
 	@echo "Linking configuration files"
-	@ln keybindings.json $$HOME/Library/Application Support/Code/User/keybindings.json
-	@ln settings.json $$HOME/Library/Application Support/Code/User/settings.json
+	@ln -f keybindings.json $$HOME/Library/Application\ Support/Code/User/keybindings.json
+	@ln -f settings.json $$HOME/Library/Application\ Support/Code/User/settings.json
+
+setup: extension-custom extensions-install link  ## Build custom extension, install all extensions, link config files
 
 update: extensions-list  ## Update extension list, alias for extensions-list
 

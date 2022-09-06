@@ -669,46 +669,42 @@
             "type": "command",
             "name": "File explorer",
             "icon": "list-tree",
-            "command": "workbench.files.action.focusFilesExplorer",
+            "command": "workbench.files.action.focusFilesExplorer"
         },
         {
             "keys": "f.f",
             "type": "command",
             "name": "File directory",
             "icon": "file",
-            "command": "file-browser.open",
+            "command": "file-browser.open"
         },
         {
             "keys": "f.F",
             "type": "command",
             "name": "Format file",
             "icon": "find-replace-all",
-            "command": "editor.action.formatDocument",
+            "command": "editor.action.formatDocument"
         },
         {
             "keys": "f.o",
             "type": "commands",
             "name": "Search files",
             "icon": "search",
-            "commands": [
-                "workbench.action.quickOpen",
-            ]
+            "command": "workbench.action.quickOpen"
         },
         {
             "keys": "f.s",
             "type": "commands",
             "name": "Spell check",
             "icon": "check",
-            "commands": [
-                "cSpell.toggleEnableSpellChecker",
-            ]
+            "command": "cSpell.toggleEnableSpellChecker"
         },
         {
             "keys": "f./",
             "type": "command",
             "name": "Search files",
             "icon": "search",
-            "command": "workbench.action.quickOpen",
+            "command": "workbench.action.quickOpen"
         },
         {
             "keys": "g.s",
@@ -719,31 +715,34 @@
             "type": "command",
             "name": "Status",
             "icon": "preview",
-            "command": "magit.status",
+            "commands": [
+                "workbench.action.files.saveAll",
+                "magit.status"
+            ]
         },
         {
             "keys": "j.b",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "j.c",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "j.C",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "j.l",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "j.+",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "j.=",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "j.b",
@@ -808,60 +807,60 @@
         },
         {
             "keys": "w.D",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "w.F",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "w.M",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "w.W",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "w.j",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "w.k",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "w.o",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "w.-",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "w./",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "w.h",
             "type": "command",
             "name": "Move editor left",
             "icon": "arrow-small-left",
-            "command": "workbench.action.moveEditorToPreviousGroup",
+            "command": "workbench.action.moveEditorToPreviousGroup"
         },
         {
             "keys": "w.l",
             "type": "command",
             "name": "Move editor right",
             "icon": "arrow-small-right",
-            "command": "workbench.action.moveEditorToNextGroup",
+            "command": "workbench.action.moveEditorToNextGroup"
         },
         {
             "keys": "w.w",
             "type": "command",
             "name": "Open workspace",
             "icon": "multiple-windows",
-            "command": "projectManager.listProjects",
+            "command": "projectManager.listProjects"
         },
         {
             "keys": "w.z",
