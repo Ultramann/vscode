@@ -49,13 +49,12 @@
         "file:///Users/carygoltermann/.vscode/extensions/atlassian.atlascode-2.10.12/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     },
     // Markdown
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    },
     "files.associations": {
         "*.mdx": "markdown"
     },
-
-    // --- PACKAGES ---
-    // Spell check
-    "cSpell.enabled": false,
     // Date & Time
     "dateTime.customFormat": "ddd MMM Do   h:mm a",
     // Todo

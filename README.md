@@ -6,7 +6,7 @@ General
 
 Lifecycle
   setup                Build custom extension, install all extensions, link config files
-  update               Update extension list, alias for extensions-list
+  update               Update extension list, link files from user directory
 
 Extensions
   extension-custom     Build and install custom extension
