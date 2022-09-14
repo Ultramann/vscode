@@ -23,6 +23,7 @@ extension-custom:  ## Build and install custom extension
 	@$(MAKE) -C cmg build
 
 extensions-list:  ## Write external extensions list to extensions.txt
+	@echo "Building extension list"
 	@bash extension_list.sh | sort | uniq > extensions.txt
 
 extensions-install:  ## Install external extensions in extensions.txt

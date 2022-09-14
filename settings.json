@@ -350,7 +350,7 @@
                 "b"
             ],
             "commands": [
-                "extension.vim_ctrl+o"
+                "workbench.action.navigateBack"
             ],
             "when": "editorTextFocus && vim.active && vim.use<C-o> && !inDebugRepl",
             "silent": true
@@ -361,7 +361,7 @@
                 "B"
             ],
             "commands": [
-                "extension.vim_ctrl+i"
+                "workbench.action.navigateForward"
             ],
             "when": "editorTextFocus && vim.active && vim.use<C-o> && !inDebugRepl",
             "silent": true
