@@ -2,14 +2,14 @@
 $ make help
 
 General
-  help                 Display this help text
+  help             Display this help text
 
 Lifecycle
-  setup                Build custom extension, install all extensions, link config files
-  update               Update extension list, link files from user directory
+  setup            Build custom extension, install all extensions, link config files
+  update           Update extension list, link files from user directory
 
 Extensions
-  extension-custom     Build and install custom extension
-  extensions-list      Write external extensions list to extensions.txt
-  extensions-install   Install external extensions in extensions.txt
+  ext-custom       Build and install custom extension
+  ext-list-all     Write external extensions list to extensions.txt
+  ext-install-all  Install external extensions in extensions.txt
 ```
