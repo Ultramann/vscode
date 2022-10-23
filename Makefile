@@ -8,25 +8,25 @@ setup: ext-custom ext-install-all link-from-repo  ## Build custom extension, ins
 update: ext-list-all link-from-user  ## Update extension list, link files from user directory
 
 link-from-repo:
-	@print "Linking configuration files..."
+	@printf "Linking configuration files..."
 	@ln -f keybindings.json $$HOME/Library/Application\ Support/Code/User/keybindings.json
 	@ln -f settings.json $$HOME/Library/Application\ Support/Code/User/settings.json
 	@echo "done"
 
 link-from-user:
-	@print "Linking configuration files..."
+	@printf "Linking configuration files..."
 	@ln -f $$HOME/Library/Application\ Support/Code/User/keybindings.json keybindings.json
 	@ln -f $$HOME/Library/Application\ Support/Code/User/settings.json settings.json
 	@echo "done"
 
 ##@ Extensions
 ext-custom:  ## Build and install custom extension
-	@print "Building custom extension..."
+	@printf "Building custom extension..."
 	@$(MAKE) -C cmg build
 	@echo "done"
 
 ext-list-all:  ## Write external extensions list to extensions.txt
-	@print "Building extension list..."
+	@printf "Building extension list..."
 	@bash extension_list.sh | sort | uniq > extensions.txt
 	@echo "done"
 
