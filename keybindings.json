@@ -37,11 +37,6 @@
 		"when": "editorFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
 	},
 	{
-		"key": "escape",
-		"command": "magit.quit",
-		"when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
-	},
-	{
 		"key": "x",
 		"command": "magit.discard-at-point",
 		"when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
@@ -275,31 +270,31 @@
 	{
 		"key": "c",
 		"command": "workbench.action.debug.continue",
-		"when": "debugState == 'stopped'"
+		"when": "debugState == 'stopped' && vim.mode != 'Insert'"
 	},
 	{
 		"key": "n",
 		"command": "workbench.action.debug.stepOver",
-		"when": "debugState == 'stopped'"
+		"when": "debugState == 'stopped' && vim.mode != 'Insert'"
 	},
 	{
 		"key": "s",
 		"command": "workbench.action.debug.stepInto",
-		"when": "debugState != 'inactive'"
+		"when": "debugState != 'inactive' && vim.mode != 'Insert'"
 	},
 	{
 		"key": "o",
 		"command": "workbench.action.debug.stepOut",
-		"when": "debugState == 'stopped'"
+		"when": "debugState == 'stopped' && vim.mode != 'Insert'"
 	},
 	{
 		"key": "r",
 		"command": "workbench.action.debug.restart",
-		"when": "inDebugMode"
+		"when": "inDebugMode && vim.mode != 'Insert'"
 	},
 	{
 		"key": "q",
 		"command": "workbench.action.debug.stop",
-		"when": "inDebugMode && !focusedSessionIsAttach"
+		"when": "inDebugMode && !focusedSessionIsAttach && vim.mode != 'Insert'"
 	}
 ]

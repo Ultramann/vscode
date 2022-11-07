@@ -20,6 +20,8 @@
     "explorer.confirmDragAndDrop": false,
     // Terminal
     "terminal.integrated.enableMultiLinePasteWarning": false,
+    // Debugging
+    "debug.internalConsoleOptions": "neverOpen",
 
     // --- LANGUAGES ---
     // Python
@@ -39,9 +41,6 @@
     "go.toolsManagement.autoUpdate": true,
     "go.enableCodeLens": {
         "runtest": false
-    },
-    "gopls": {
-        "experimentalWorkspaceModule": true,
     },
     // Yaml
     "yaml.schemas": {
@@ -977,5 +976,8 @@
         "siteId": "b7c300b4-6e80-40dd-9cd4-14b7e1c7e075",
         "projectKey": "MLP"
     },
-    "githubPullRequests.pullBranch": "never"
+    "githubPullRequests.pullBranch": "never",
+
+    // Spell Check, Must be last
+    "cSpell.enabled": false
 }

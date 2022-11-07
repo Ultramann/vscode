@@ -11,6 +11,7 @@ kahole.magit
 mhutchie.git-graph
 mikestead.dotenv
 ms-azuretools.vscode-docker
+ms-python.isort
 ms-python.python
 ms-python.vscode-pylance
 redhat.vscode-yaml
