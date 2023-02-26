@@ -11,6 +11,7 @@
     "workbench.editor.revealIfOpen": true,
     "comments.openView": "never",
     // Editor
+    "editor.minimap.enabled": false,
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "editor.wordWrap": "on",
@@ -23,10 +24,10 @@
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     // Terminal
+    "terminal.integrated.defaultProfile.osx": "bash",
     "terminal.integrated.enableMultiLinePasteWarning": false,
     // Debugging
     "debug.internalConsoleOptions": "neverOpen",
-
     // --- LANGUAGES ---
     // Python
     "python.testing.pytestEnabled": true,
@@ -121,7 +122,6 @@
     ],
     // Misc
     "redhat.telemetry.enabled": false,
-
     // --- COLORS ---
     "workbench.colorTheme": "GitHub Dark Default",
     "editor.tokenColorCustomizations": {
@@ -231,10 +231,10 @@
         "editor.findMatchHighlightBackground": "#edfe0039",
         "editor.lineHighlightBackground": "#1f1f1f",
         "editorLineNumber.activeForeground": "#ffffff",
-		"editorBracketHighlight.foreground1": "#c9d1d9",
-		"editorBracketHighlight.foreground2": "#ffd700",
-		"editorBracketHighlight.foreground3": "#da70d6",
-		"editorBracketHighlight.foreground4": "#179fff",
+        "editorBracketHighlight.foreground1": "#c9d1d9",
+        "editorBracketHighlight.foreground2": "#ffd700",
+        "editorBracketHighlight.foreground3": "#da70d6",
+        "editorBracketHighlight.foreground4": "#179fff",
         "editorCursor.foreground": "#d65d52",
         "editorCursor.background": "#0d1117",
         "editorBracketMatch.border": "#f58379",
@@ -514,111 +514,111 @@
             "keys": [
                 "."
             ],
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "'",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": ";",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "*",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "\t",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "\"",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "!",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "c",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "h",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "i",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "l",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "q",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "r",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "v",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "p.l",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "p.p",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "s.P",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "T.z",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "0",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "1",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "2",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "3",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "4",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "5",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "6",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "7",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "8",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "/",
@@ -629,7 +629,7 @@
         },
         {
             "keys": "b.B",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "b.b",
@@ -650,7 +650,7 @@
         },
         {
             "keys": "d.i",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "d.n",
@@ -710,7 +710,7 @@
         },
         {
             "keys": "g.s",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "g.g",
@@ -780,7 +780,7 @@
         },
         {
             "keys": "s.c",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "s.*",
@@ -869,7 +869,7 @@
             "type": "command",
             "name": "Combine splits",
             "icon": "combine",
-            "command": "workbench.action.joinAllGroups",
+            "command": "workbench.action.joinAllGroups"
         },
         {
             "keys": "n",
@@ -981,7 +981,6 @@
         "projectKey": "MLP"
     },
     "githubPullRequests.pullBranch": "never",
-
     // Spell Check, Must be last
     "cSpell.enabled": false
 }
