@@ -49,7 +49,7 @@
     // Yaml
     "yaml.schemas": {
         "https://json.schemastore.org/github-workflow.json": "**/.github/workflows/*",
-        "file:///Users/carygoltermann/.vscode/extensions/atlassian.atlascode-2.10.12/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+        "file:///Users/carygoltermann/.vscode/extensions/atlassian.atlascode-3.0.2/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     },
     // Markdown
     "[markdown]": {

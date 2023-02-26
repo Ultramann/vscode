@@ -31,4 +31,4 @@ ext-list-all:  ## Write external extensions list to extensions.txt
 	@echo "done"
 
 ext-install-all:  ## Install external extensions in extensions.txt
-	@cat extensions.txt | while read ex; do code --install-extensions $${ex}; done
+	@cat extensions.txt | while read ex; do code --install-extension $${ex}; done
