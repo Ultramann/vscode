@@ -981,6 +981,8 @@
         "projectKey": "MLP"
     },
     "githubPullRequests.pullBranch": "never",
+    "extensions.ignoreRecommendations": true,
+
     // Spell Check, Must be last
     "cSpell.enabled": false
 }

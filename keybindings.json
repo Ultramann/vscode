@@ -270,31 +270,31 @@
 	{
 		"key": "c",
 		"command": "workbench.action.debug.continue",
-		"when": "debugState == 'stopped' && vim.mode != 'Insert'"
+		"when": "debugState == 'stopped' && vim.mode != 'Insert' && !inDebugRepl"
 	},
 	{
 		"key": "n",
 		"command": "workbench.action.debug.stepOver",
-		"when": "debugState == 'stopped' && vim.mode != 'Insert'"
+		"when": "debugState == 'stopped' && vim.mode != 'Insert' && !inDebugRepl"
 	},
 	{
 		"key": "s",
 		"command": "workbench.action.debug.stepInto",
-		"when": "debugState != 'inactive' && vim.mode != 'Insert'"
+		"when": "debugState != 'inactive' && vim.mode != 'Insert' && !inDebugRepl"
 	},
 	{
 		"key": "o",
 		"command": "workbench.action.debug.stepOut",
-		"when": "debugState == 'stopped' && vim.mode != 'Insert'"
+		"when": "debugState == 'stopped' && vim.mode != 'Insert' && !inDebugRepl"
 	},
 	{
 		"key": "r",
 		"command": "workbench.action.debug.restart",
-		"when": "inDebugMode && vim.mode != 'Insert'"
+		"when": "inDebugMode && vim.mode != 'Insert' && !inDebugRepl"
 	},
 	{
 		"key": "q",
 		"command": "workbench.action.debug.stop",
-		"when": "inDebugMode && !focusedSessionIsAttach && vim.mode != 'Insert'"
+		"when": "inDebugMode && !focusedSessionIsAttach && vim.mode != 'Insert' && !inDebugRepl"
 	}
 ]
