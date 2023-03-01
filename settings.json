@@ -282,10 +282,19 @@
         },
         {
             "before": [
+                "u"
+            ],
+            "commands": [
+                "undo"
+            ],
+            "silent": true
+        },
+        {
+            "before": [
                 "U"
             ],
             "commands": [
-                "extension.vim_ctrl+r"
+                "redo"
             ],
             "silent": true
         },
@@ -984,5 +993,9 @@
     "extensions.ignoreRecommendations": true,
 
     // Spell Check, Must be last
-    "cSpell.enabled": false
+    "cSpell.enabled": false,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "git.openRepositoryInParentFolders": "never"
 }
