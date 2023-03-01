@@ -10,7 +10,9 @@ To make changes to your vscode configuration go through the following steps.
 To setup this configuration on a new machine go through the following steps.
 
 1. Clone this repo.
-2. Run `make setup`. This will install all the extentions in `extension.txt` and link the configuration in settings.json/keybindings.json to `$HOME/Library/Application\ Support/Code/User`.
+2. Ensure `code` accessible in `$PATH`.
+3. Run `make setup`. This will install all the extentions in `extension.txt` and link the configuration in settings.json/keybindings.json to `$HOME/Library/Application\ Support/Code/User`. Requires `npm` and `vsce` to be installed.
+4. Drag panel containers - terminal, output, debug console, problems - from panel to secondary bar.
 
 ## Make Help
 ```txt
