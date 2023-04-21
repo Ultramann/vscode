@@ -74,22 +74,6 @@
 		"when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
 	},
 	{
-		"key": "shift+x",
-		"command": "-magit.resetting"
-	},
-	{
-		"key": "x",
-		"command": "-magit.reset-mixed"
-	},
-	{
-		"key": "ctrl+u x",
-		"command": "-magit.reset-hard"
-	},
-	{
-		"key": "y",
-		"command": "-magit.show-refs"
-	},
-	{
 		"key": "y",
 		"command": "vspacecode.showMagitRefMenu",
 		"when": "editorTextFocus && editorLangId == 'magit' && vim.mode == 'Normal'"

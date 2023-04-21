@@ -1,33 +1,37 @@
 {
     // --- GENERAL ---
     // Startup
-    "window.restoreFullscreen": true,
     "window.newWindowDimensions": "maximized",
-    "workbench.startupEditor": "none",
+    "window.restoreFullscreen": true,
+    "window.zoomLevel": 1,
     // UI
     "workbench.panel.defaultLocation": "right",
     "workbench.editor.enablePreview": false,
-    "workbench.editor.showTabs": false,
     "workbench.editor.revealIfOpen": true,
+    "workbench.editor.showTabs": false,
+    "workbench.startupEditor": "none",
     "comments.openView": "never",
+    "extensions.ignoreRecommendations": true,
     // Editor
-    "editor.minimap.enabled": false,
-    "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "editor.minimap.enabled": false,
     "editor.wordWrap": "on",
     "editor.quickSuggestions": {
         "comments": "on",
         "strings": "on"
     },
+    // Git
     "git.autofetch": true,
+    "githubPullRequests.pullBranch": "never",
     // Explorer
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     // Terminal
-    "terminal.integrated.defaultProfile.osx": "bash",
     "terminal.integrated.enableMultiLinePasteWarning": false,
     // Debugging
     "debug.internalConsoleOptions": "neverOpen",
+
     // --- LANGUAGES ---
     // Python
     "python.testing.pytestEnabled": true,
@@ -42,6 +46,9 @@
         "-vv",
         "."
     ],
+    "[python]": {
+        "editor.formatOnType": true
+    },
     // Golang
     "go.toolsManagement.autoUpdate": true,
     "go.enableCodeLens": {
@@ -50,7 +57,7 @@
     // Yaml
     "yaml.schemas": {
         "https://json.schemastore.org/github-workflow.json": "**/.github/workflows/*",
-        "file:///Users/carygoltermann/.vscode/extensions/atlassian.atlascode-3.0.2/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+        "file:///Users/carygoltermann/.vscode/extensions/atlassian.atlascode-3.0.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     },
     // Markdown
     "[markdown]": {
@@ -122,6 +129,7 @@
     ],
     // Misc
     "redhat.telemetry.enabled": false,
+
     // --- COLORS ---
     "workbench.colorTheme": "GitHub Dark Default",
     "editor.tokenColorCustomizations": {
@@ -231,10 +239,10 @@
         "editor.findMatchHighlightBackground": "#edfe0039",
         "editor.lineHighlightBackground": "#1f1f1f",
         "editorLineNumber.activeForeground": "#ffffff",
-        "editorBracketHighlight.foreground1": "#c9d1d9",
-        "editorBracketHighlight.foreground2": "#ffd700",
-        "editorBracketHighlight.foreground3": "#da70d6",
-        "editorBracketHighlight.foreground4": "#179fff",
+		"editorBracketHighlight.foreground1": "#c9d1d9",
+		"editorBracketHighlight.foreground2": "#ffd700",
+		"editorBracketHighlight.foreground3": "#da70d6",
+		"editorBracketHighlight.foreground4": "#179fff",
         "editorCursor.foreground": "#d65d52",
         "editorCursor.background": "#0d1117",
         "editorBracketMatch.border": "#f58379",
@@ -282,19 +290,10 @@
         },
         {
             "before": [
-                "u"
-            ],
-            "commands": [
-                "undo"
-            ],
-            "silent": true
-        },
-        {
-            "before": [
                 "U"
             ],
             "commands": [
-                "redo"
+                "extension.vim_ctrl+r"
             ],
             "silent": true
         },
@@ -523,111 +522,111 @@
             "keys": [
                 "."
             ],
-            "position": -1
+            "position": -1,
         },
         {
             "keys": "'",
-            "position": -1
+            "position": -1,
         },
         {
             "keys": ";",
-            "position": -1
+            "position": -1,
         },
         {
             "keys": "*",
-            "position": -1
+            "position": -1,
         },
         {
             "keys": "\t",
-            "position": -1
+            "position": -1,
         },
         {
             "keys": "\"",
-            "position": -1
+            "position": -1,
         },
         {
             "keys": "!",
-            "position": -1
+            "position": -1,
         },
         {
             "keys": "c",
-            "position": -1
+            "position": -1,
         },
         {
             "keys": "h",
-            "position": -1
+            "position": -1,
         },
         {
             "keys": "i",
-            "position": -1
+            "position": -1,
         },
         {
             "keys": "l",
-            "position": -1
+            "position": -1,
         },
         {
             "keys": "q",
-            "position": -1
+            "position": -1,
         },
         {
             "keys": "r",
-            "position": -1
+            "position": -1,
         },
         {
             "keys": "v",
-            "position": -1
+            "position": -1,
         },
         {
             "keys": "p.l",
-            "position": -1
+            "position": -1,
         },
         {
             "keys": "p.p",
-            "position": -1
+            "position": -1,
         },
         {
             "keys": "s.P",
-            "position": -1
+            "position": -1,
         },
         {
             "keys": "T.z",
-            "position": -1
+            "position": -1,
         },
         {
             "keys": "0",
-            "position": -1
+            "position": -1,
         },
         {
             "keys": "1",
-            "position": -1
+            "position": -1,
         },
         {
             "keys": "2",
-            "position": -1
+            "position": -1,
         },
         {
             "keys": "3",
-            "position": -1
+            "position": -1,
         },
         {
             "keys": "4",
-            "position": -1
+            "position": -1,
         },
         {
             "keys": "5",
-            "position": -1
+            "position": -1,
         },
         {
             "keys": "6",
-            "position": -1
+            "position": -1,
         },
         {
             "keys": "7",
-            "position": -1
+            "position": -1,
         },
         {
             "keys": "8",
-            "position": -1
+            "position": -1,
         },
         {
             "keys": "/",
@@ -638,7 +637,7 @@
         },
         {
             "keys": "b.B",
-            "position": -1
+            "position": -1,
         },
         {
             "keys": "b.b",
@@ -659,7 +658,7 @@
         },
         {
             "keys": "d.i",
-            "position": -1
+            "position": -1,
         },
         {
             "keys": "d.n",
@@ -719,7 +718,7 @@
         },
         {
             "keys": "g.s",
-            "position": -1
+            "position": -1,
         },
         {
             "keys": "g.g",
@@ -789,7 +788,7 @@
         },
         {
             "keys": "s.c",
-            "position": -1
+            "position": -1,
         },
         {
             "keys": "s.*",
@@ -878,7 +877,7 @@
             "type": "command",
             "name": "Combine splits",
             "icon": "combine",
-            "command": "workbench.action.joinAllGroups"
+            "command": "workbench.action.joinAllGroups",
         },
         {
             "keys": "n",
@@ -970,32 +969,5 @@
             ]
         }
     ],
-    // Jira
-    "atlascode.jira.enabled": true,
-    "atlascode.jira.todoIssues.enabled": false,
-    "atlascode.bitbucket.enabled": false,
-    "atlascode.helpExplorerEnabled": false,
-    "atlascode.jira.jqlList": [
-        {
-            "id": "4c3c14f9-9a17-43b2-811e-eaa54516e67e",
-            "enabled": true,
-            "name": "My Issues",
-            "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
-            "siteId": "b7c300b4-6e80-40dd-9cd4-14b7e1c7e075",
-            "monitor": true
-        }
-    ],
-    "atlascode.jira.lastCreateSiteAndProject": {
-        "siteId": "b7c300b4-6e80-40dd-9cd4-14b7e1c7e075",
-        "projectKey": "MLP"
-    },
-    "githubPullRequests.pullBranch": "never",
-    "extensions.ignoreRecommendations": true,
-
-    // Spell Check, Must be last
-    "cSpell.enabled": false,
-    "[python]": {
-        "editor.formatOnType": true
-    },
-    "git.openRepositoryInParentFolders": "never"
+    "cSpell.enabled": false
 }

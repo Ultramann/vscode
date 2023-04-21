@@ -1,5 +1,4 @@
 alefragnani.project-manager
-atlassian.atlascode
 bodil.file-browser
 dbaeumer.vscode-eslint
 fabiospampinato.vscode-todo-plus
