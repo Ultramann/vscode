@@ -3,7 +3,6 @@
     // Startup
     "window.newWindowDimensions": "maximized",
     "window.restoreFullscreen": true,
-    "window.zoomLevel": 1,
     // UI
     "workbench.panel.defaultLocation": "right",
     "workbench.editor.enablePreview": false,
@@ -12,6 +11,7 @@
     "workbench.startupEditor": "none",
     "comments.openView": "never",
     "extensions.ignoreRecommendations": true,
+    "search.useParentIgnoreFiles": true,
     // Editor
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
@@ -23,29 +23,33 @@
     },
     // Git
     "git.autofetch": true,
+    "git.pruneOnFetch": true,
     "githubPullRequests.pullBranch": "never",
     // Explorer
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     // Terminal
+    "terminal.integrated.profiles.osx": {
+        "bash": {
+            "path": "/bin/bash",
+            "env": {"SHELL": "/bin/bash"}
+        }
+    },
+    "terminal.integrated.defaultProfile.osx": "bash",
     "terminal.integrated.enableMultiLinePasteWarning": false,
+    "terminal.integrated.scrollback": 100000,
+    "terminal.integrated.inheritEnv": false,
     // Debugging
     "debug.internalConsoleOptions": "neverOpen",
 
     // --- LANGUAGES ---
     // Python
+    "python.terminal.activateEnvironment": false,
     "python.testing.pytestEnabled": true,
     "python.testing.unittestEnabled": false,
     "python.formatting.provider": "black",
-    "python.formatting.blackArgs": [
-        "--line-length",
-        "100"
-    ],
-    "python.testing.pytestArgs": [
-        "--no-cov",
-        "-vv",
-        "."
-    ],
+    "python.formatting.blackArgs": ["--line-length", "80"],
+    "python.testing.pytestArgs": ["--no-cov", "-vv", "."],
     "[python]": {
         "editor.formatOnType": true
     },
@@ -57,7 +61,6 @@
     // Yaml
     "yaml.schemas": {
         "https://json.schemastore.org/github-workflow.json": "**/.github/workflows/*",
-        "file:///Users/carygoltermann/.vscode/extensions/atlassian.atlascode-3.0.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     },
     // Markdown
     "[markdown]": {
@@ -235,9 +238,11 @@
         "editor.selectionHighlightBorder": "#5a5f65",
         "editor.wordHighlightBackground": "#1f2831",
         "editor.wordHighlightBorder": "#5a5f65",
+        "editor.findMatchBorder": "#fff2006d",
         "editor.findMatchBackground": "#2a2f39",
-        "editor.findMatchHighlightBackground": "#edfe0039",
-        "editor.lineHighlightBackground": "#1f1f1f",
+        "editor.findMatchHighlightBorder": "#a8a8a86d",
+        "editor.findMatchHighlightBackground": "#2a2f39",
+        "editor.lineHighlightBackground": "#363636",
         "editorLineNumber.activeForeground": "#ffffff",
 		"editorBracketHighlight.foreground1": "#c9d1d9",
 		"editorBracketHighlight.foreground2": "#ffd700",
@@ -969,5 +974,7 @@
             ]
         }
     ],
+    "git.openRepositoryInParentFolders": "always",
+    "window.zoomLevel": 1,
     "cSpell.enabled": false
 }
