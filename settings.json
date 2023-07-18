@@ -60,7 +60,7 @@
     },
     // Yaml
     "yaml.schemas": {
-        "https://json.schemastore.org/github-workflow.json": "**/.github/workflows/*",
+        "https://json.schemastore.org/github-workflow.json": "**/.github/workflows/*"
     },
     // Markdown
     "[markdown]": {
@@ -164,15 +164,15 @@
                         "meta.diff.header"
                     ],
                     "settings": {
-                        "foreground": "#79c0ff",
+                        "foreground": "#79c0ff"
                     }
                 },
                 {
                     "scope": [
-                        "markup.quote",
+                        "markup.quote"
                     ],
                     "settings": {
-                        "foreground": "#8b949e",
+                        "foreground": "#8b949e"
                     }
                 },
                 {
@@ -182,7 +182,7 @@
                         "punctuation.definition.deleted"
                     ],
                     "settings": {
-                        "foreground": "#fa7b70",
+                        "foreground": "#fa7b70"
                     }
                 },
                 {
@@ -191,7 +191,7 @@
                         "punctuation.definition.list.begin.markdown"
                     ],
                     "settings": {
-                        "foreground": "#ea8982",
+                        "foreground": "#ea8982"
                     }
                 },
                 {
@@ -201,25 +201,25 @@
                         "entity.name.tag"
                     ],
                     "settings": {
-                        "foreground": "#99e7a2",
+                        "foreground": "#99e7a2"
                     }
                 },
                 {
                     "scope": "entity.name",
                     "settings": {
-                        "foreground": "#f1d4a8",
+                        "foreground": "#f1d4a8"
                     }
                 },
                 {
                     "scope": "entity.name.import.go",
                     "settings": {
-                        "foreground": "#c0c8d0",
+                        "foreground": "#c0c8d0"
                     }
                 },
                 {
                     "scope": "punctuation.definition.list.begin.markdown",
                     "settings": {
-                        "foreground": "#f58379",
+                        "foreground": "#f58379"
                     }
                 }
             ]
@@ -229,7 +229,7 @@
         "[GitHub Dark Default]": {
             "enabled": true,
             "rules": {
-                "magit-ref-name": "#f1d4a8",
+                "magit-ref-name": "#f1d4a8"
             }
         }
     },
@@ -311,7 +311,7 @@
             ],
             "after": [
                 "`"
-            ],
+            ]
         },
         {
             "before": [
@@ -319,7 +319,7 @@
             ],
             "after": [
                 "'"
-            ],
+            ]
         },
         // Fold
         {
@@ -483,12 +483,12 @@
                 "testing.debugAtCursor"
             ],
             "silent": true
-        },
+        }
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
         {
             "before": [
-                "<space>",
+                "<space>"
             ],
             "commands": [
                 "vspacecode.space"
@@ -513,7 +513,7 @@
         },
         {
             "before": [
-                "p",
+                "p"
             ],
             "after": [
                 "p",
@@ -530,111 +530,111 @@
             "keys": [
                 "."
             ],
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "'",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": ";",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "*",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "\t",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "\"",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "!",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "c",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "h",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "i",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "l",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "q",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "r",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "v",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "p.l",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "p.p",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "s.P",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "T.z",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "0",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "1",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "2",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "3",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "4",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "5",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "6",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "7",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "8",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "/",
@@ -645,7 +645,7 @@
         },
         {
             "keys": "b.B",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "b.b",
@@ -666,7 +666,7 @@
         },
         {
             "keys": "d.i",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "d.n",
@@ -726,7 +726,7 @@
         },
         {
             "keys": "g.s",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "g.g",
@@ -796,7 +796,7 @@
         },
         {
             "keys": "s.c",
-            "position": -1,
+            "position": -1
         },
         {
             "keys": "s.*",
@@ -885,7 +885,7 @@
             "type": "command",
             "name": "Combine splits",
             "icon": "combine",
-            "command": "workbench.action.joinAllGroups",
+            "command": "workbench.action.joinAllGroups"
         },
         {
             "keys": "n",
@@ -908,7 +908,7 @@
                     "icon": "preview",
                     "command": "cmg.openNote",
                     "args": true
-                },
+                }
             ]
         },
         {
