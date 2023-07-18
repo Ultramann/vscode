@@ -240,9 +240,9 @@
         "editor.wordHighlightBorder": "#5a5f65",
         "editor.findMatchBorder": "#fff2006d",
         "editor.findMatchBackground": "#2a2f39",
-        "editor.findMatchHighlightBorder": "#a8a8a86d",
+        "editor.findMatchHighlightBorder": "#b9b9b96d",
         "editor.findMatchHighlightBackground": "#2a2f39",
-        "editor.lineHighlightBackground": "#363636",
+        "editor.lineHighlightBackground": "#2e2d2d",
         "editorLineNumber.activeForeground": "#ffffff",
 		"editorBracketHighlight.foreground1": "#c9d1d9",
 		"editorBracketHighlight.foreground2": "#ffd700",
@@ -261,6 +261,9 @@
         "terminal.ansiGreen": "#6ff089",
         "terminal.ansiBrightRed": "#f58379"
     },
+    "vim.searchMatchTextColor": "#e3dc59",
+    "vim.searchHighlightColor": "#ffffff00",
+    "vim.searchHighlightTextColor": "#e3dc59",
     // --- BINDINGS ---
     // Vim
     "vim.normalModeKeyBindingsNonRecursive": [
