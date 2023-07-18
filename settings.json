@@ -242,7 +242,7 @@
         "editor.findMatchBackground": "#2a2f39",
         "editor.findMatchHighlightBorder": "#fff2006d",
         "editor.findMatchHighlightBackground": "#2a2f39",
-        "editor.lineHighlightBackground": "#2e2d2d",
+        "editor.lineHighlightBackground": "#394049",
         "editorLineNumber.activeForeground": "#ffffff",
 		"editorBracketHighlight.foreground1": "#c9d1d9",
 		"editorBracketHighlight.foreground2": "#ffd700",
