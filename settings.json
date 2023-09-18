@@ -1,6 +1,7 @@
 {
     // --- GENERAL ---
     // Startup
+    "window.titleBarStyle": "native",
     "window.newWindowDimensions": "maximized",
     "window.restoreFullscreen": true,
     // UI
@@ -241,8 +242,8 @@
         "editor.findMatchBorder": "#fff200a9",
         "editor.findMatchBackground": "#2a2f39",
         "editor.findMatchHighlightBorder": "#fff2006d",
-        "editor.findMatchHighlightBackground": "#2a2f39",
-        "editor.lineHighlightBackground": "#394049",
+        "editor.findMatchHighlightBackground": "#2a3036",
+        "editor.lineHighlightBackground": "#2c3239",
         "editorLineNumber.activeForeground": "#ffffff",
 		"editorBracketHighlight.foreground1": "#c9d1d9",
 		"editorBracketHighlight.foreground2": "#ffd700",
@@ -977,7 +978,7 @@
             ]
         }
     ],
-    "git.openRepositoryInParentFolders": "always",
+    "git.openRepositoryInParentFolders": "never",
     "window.zoomLevel": 1,
     "cSpell.enabled": false
 }
