@@ -19,12 +19,12 @@
 	{
 		"key": "space",
 		"command": "vspacecode.space",
-		"when": "inDebugMode && !inDebugRepl && !whichkeyActive"
+		"when": "sideBarFocus && !inputFocus && !whichkeyActive"
 	},
 	{
-		"key": "space",
-		"command": "vspacecode.space",
-		"when": "sideBarFocus && !inputFocus && !whichkeyActive"
+		"key": "tab",
+		"command": "magit.toggle-fold",
+		"when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert' && editorLangId == 'magit'"
 	},
 	{
 		"key": "tab",
@@ -189,13 +189,36 @@
 		"command": "workbench.action.output.toggleOutput"
 	},
 	{
+		"key": "ctrl+;",
+		"command": "workbench.action.toggleAuxiliaryBar",
+		"when": "!auxiliaryBarVisible"
+	},
+	{
+		"key": "ctrl+;",
+		"command": "workbench.action.closeAuxiliaryBar",
+		"when": "auxiliaryBarFocus"
+	},
+	{
+		"key": "ctrl+;",
+		"command": "workbench.action.focusAuxiliaryBar",
+		"when": "auxiliaryBarVisible && !auxiliaryBarFocus"
+	},
+	// Chat
+	{
 		"key": "ctrl+'",
-		"command": "workbench.action.closeAuxiliaryBar"
+		"command": "terminal.focus",
+		"when": "auxiliaryBarVisible && workbench.panel.chat.view.copilot.visible"
+	},
+	{
+		"key": "cmd+.",
+		"command": "workbench.action.chat.openModePicker",
+		"when": "chatIsEnabled && inChatInput"
 	},
 	// Terminal
 	{
-		"key": "ctrl+;",
-		"command": "workbench.action.terminal.toggleTerminal"
+		"key": "ctrl+'",
+		"command": "workbench.action.chat.open",
+		"when": "terminalFocus"
 	},
 	{
 		"key": "ctrl+shift+;",
@@ -203,22 +226,22 @@
 	},
 	{
 		"key": "ctrl+k",
-		"command": "workbench.action.terminal.focusPrevious",
+		"command": "workbench.action.terminal.focusPreviousPane",
 		"when": "terminalFocus"
 	},
 	{
 		"key": "ctrl+j",
-		"command": "workbench.action.terminal.focusNext",
-		"when": "terminalFocus"
-	},
-	{
-		"key": "ctrl+n",
 		"command": "workbench.action.terminal.focusNextPane",
 		"when": "terminalFocus"
 	},
 	{
+		"key": "ctrl+n",
+		"command": "workbench.action.terminal.focusNext",
+		"when": "terminalFocus"
+	},
+	{
 		"key": "ctrl+p",
-		"command": "workbench.action.terminal.focusPreviousPane",
+		"command": "workbench.action.terminal.focusPrevious",
 		"when": "terminalFocus"
 	},
 	{
@@ -227,12 +250,12 @@
 		"when": "terminalFocus"
 	},
 	{
-		"key": "ctrl+d",
+		"key": "ctrl+q",
 		"command": "workbench.action.terminal.kill",
 		"when": "terminalFocus"
 	},
 	{
-		"key": "ctrl+d",
+		"key": "ctrl+q",
 		"command": "workbench.action.terminal.killEditor",
 		"when": "terminalEditorFocus"
 	},
@@ -243,33 +266,43 @@
 	},
 	// Debugging
 	{
-		"key": "c",
+		"key": "ctrl+c",
 		"command": "workbench.action.debug.continue",
 		"when": "debugState == 'stopped' && vim.mode != 'Insert' && !inDebugRepl"
 	},
 	{
-		"key": "n",
+		"key": "ctrl+n",
 		"command": "workbench.action.debug.stepOver",
 		"when": "debugState == 'stopped' && vim.mode != 'Insert' && !inDebugRepl"
 	},
 	{
-		"key": "s",
+		"key": "ctrl+s",
 		"command": "workbench.action.debug.stepInto",
 		"when": "debugState != 'inactive' && vim.mode != 'Insert' && !inDebugRepl"
 	},
 	{
-		"key": "o",
+		"key": "ctrl+o",
 		"command": "workbench.action.debug.stepOut",
 		"when": "debugState == 'stopped' && vim.mode != 'Insert' && !inDebugRepl"
 	},
 	{
-		"key": "r",
+		"key": "ctrl+r",
 		"command": "workbench.action.debug.restart",
 		"when": "inDebugMode && vim.mode != 'Insert' && !inDebugRepl"
 	},
 	{
-		"key": "q",
+		"key": "ctrl+q",
 		"command": "workbench.action.debug.stop",
 		"when": "inDebugMode && !focusedSessionIsAttach && vim.mode != 'Insert' && !inDebugRepl"
+	},
+	{
+		"key": "shift+cmd+i",
+		"command": "-workbench.action.chat.openAgent",
+		"when": "config.chat.agent.enabled && !chatSetupDisabled && !chatSetupHidden"
+	},
+	{
+		"key": "cmd+.",
+		"command": "-workbench.action.chat.toggleAgentMode",
+		"when": "chatIsEnabled && inChatInput && !chatSessionRequestInProgress && chatLocation == 'panel'"
 	}
 ]

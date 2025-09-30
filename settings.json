@@ -1,31 +1,46 @@
 {
-    // --- GENERAL ---
-    // Startup
-    "window.titleBarStyle": "native",
     "window.newWindowDimensions": "maximized",
     "window.restoreFullscreen": true,
-    // UI
-    "workbench.panel.defaultLocation": "right",
+    "window.zoomLevel": 1,
+    "window.titleBarStyle": "native",
+    "window.customTitleBarVisibility": "never",
+    "workbench.activityBar.location": "top",
+    "workbench.editor.showTabs": "single",
     "workbench.editor.enablePreview": false,
     "workbench.editor.revealIfOpen": true,
-    "workbench.editor.showTabs": false,
+    "workbench.layoutControl.type": "toggles",
+    "workbench.panel.defaultLocation": "right",
     "workbench.startupEditor": "none",
     "comments.openView": "never",
-    "extensions.ignoreRecommendations": true,
     "search.useParentIgnoreFiles": true,
+    "search.quickOpen.history.filterSortOrder": "recency",
     // Editor
-    "files.trimTrailingWhitespace": true,
-    "files.insertFinalNewline": true,
     "editor.minimap.enabled": false,
     "editor.wordWrap": "on",
     "editor.quickSuggestions": {
         "comments": "on",
         "strings": "on"
     },
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
     // Git
     "git.autofetch": true,
     "git.pruneOnFetch": true,
-    "githubPullRequests.pullBranch": "never",
+    "git.openRepositoryInParentFolders": "never",
+    "git.autoRepositoryDetection": false,
+    "gitlens.views.repositories.showIncomingActivity": true,
+    "gitlens.currentLine.scrollable": false,
+    "gitlens.hovers.avatars": false,
+    "gitlens.hovers.currentLine.over": "line",
+    // Copilot
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "inlineChat.lineNaturalLanguageHint": false,
+    "github.copilot.nextEditSuggestions.enabled": true,
     // Explorer
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
@@ -37,7 +52,7 @@
         }
     },
     "terminal.integrated.defaultProfile.osx": "bash",
-    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
     "terminal.integrated.scrollback": 100000,
     "terminal.integrated.inheritEnv": false,
     // Debugging
@@ -53,8 +68,9 @@
         "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.formatOnType": true
     },
-    "black-formatter.args": ["--line-length=92"],
-    "black-formatter.showNotifications": "always",
+    "black-formatter.args": [
+        "--line-length=92"
+    ],
     // Golang
     "go.toolsManagement.autoUpdate": true,
     "go.enableCodeLens": {
@@ -102,6 +118,7 @@
     // Git Graph
     "git-graph.repository.onLoad.showCheckedOutBranch": true,
     // Github
+    "github-actions.use-enterprise": true,
     "githubPullRequests.fileListLayout": "flat",
     "githubPullRequests.commentExpandState": "collapseAll",
     "githubIssues.queries": [
@@ -134,6 +151,7 @@
     ],
     // Misc
     "redhat.telemetry.enabled": false,
+    "symlink-follow.autoFollow": true,
 
     // --- COLORS ---
     "workbench.colorTheme": "GitHub Dark Default",
@@ -646,6 +664,32 @@
             "command": "workbench.action.findInFiles"
         },
         {
+            "keys": "$",
+            "position": -1
+        },
+        {
+            "keys": "$",
+            "type": "bindings",
+            "name": "+Terminal",
+            "icon": "terminal-view-icon",
+            "bindings": [
+                {
+                    "key": "r",
+                    "type": "command",
+                    "name": "Run recent command in terminal",
+                    "icon": "debug-continue",
+                    "command": "workbench.action.terminal.runRecentCommand",
+                },
+                {
+                    "key": "s",
+                    "type": "command",
+                    "name": "Send selected text in terminal",
+                    "icon": "live-share",
+                    "command": "workbench.action.terminal.runSelectedText",
+                }
+            ]
+        },
+        {
             "keys": "b.B",
             "position": -1
         },
@@ -979,7 +1023,6 @@
             ]
         }
     ],
-    "git.openRepositoryInParentFolders": "never",
-    "window.zoomLevel": 1,
+    "docker.extension.enableComposeLanguageServer": false,
     "cSpell.enabled": false
 }
