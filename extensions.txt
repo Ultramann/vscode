@@ -1,4 +1,5 @@
 alefragnani.project-manager
+anthropic.claude-code
 bodil.file-browser
 charliermarsh.ruff
 dbaeumer.vscode-eslint
@@ -14,6 +15,7 @@ hashicorp.terraform
 humao.rest-client
 jacobdufault.fuzzy-search
 kahole.magit
+mads-hartmann.bash-ide-vscode
 mhutchie.git-graph
 mikestead.dotenv
 ms-azuretools.vscode-containers
@@ -25,7 +27,10 @@ ms-python.python
 ms-python.vscode-pylance
 ms-toolsai.jupyter
 ms-toolsai.jupyter-renderers
+ms-vscode-remote.remote-ssh
+ms-vscode-remote.remote-ssh-edit
 ms-vscode.makefile-tools
+ms-vscode.remote-explorer
 ms-vscode.vscode-speech
 redhat.vscode-yaml
 rid9.datetime

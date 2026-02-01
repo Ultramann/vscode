@@ -7,7 +7,7 @@ To make changes to your vscode configuration go through the following steps.
 2. Run `make save`. This will pull any changes from the `$HOME/Library/Application\ Support/Code/User` directory to this repo.
 
 ### Other Computers
-3. Run `make install`. This will install all updated config and extenstions.
+3. Run `make install`. This will install all updated config and extensions.
 
 ## Setup
 To setup this configuration on a new machine go through the following steps.

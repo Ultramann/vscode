@@ -153,7 +153,7 @@
 	{
 		"key": "ctrl+l",
 		"command": "workbench.action.navigateRight",
-		"when": "!inQuickOpen && !suggestWidgetVisible && !parameterHintsVisible && !isInDiffEditor"
+		"when": "!inQuickOpen && !suggestWidgetVisible && !parameterHintsVisible && !isInDiffEditor && !terminalFocus"
 	},
 	// Toggle view
 	{
@@ -204,22 +204,43 @@
 		"when": "auxiliaryBarVisible && !auxiliaryBarFocus"
 	},
 	// Chat
+	// {
+	// 	"key": "ctrl+'",
+	// 	"command": "terminal.focus",
+	// 	"when": "auxiliaryBarVisible && workbench.panel.chat.view.copilot.visible"
+	// },
+	// {
+	// 	"key": "cmd+.",
+	// 	"command": "workbench.action.chat.openModePicker",
+	// 	"when": "chatIsEnabled && inChatInput"
+	// },
+	// {
+	// 	"key": "ctrl+'",
+	// 	"command": "workbench.action.chat.open",
+	// 	"when": "terminalFocus"
+	// },
+	// Claude
 	{
 		"key": "ctrl+'",
 		"command": "terminal.focus",
-		"when": "auxiliaryBarVisible && workbench.panel.chat.view.copilot.visible"
+		"when": "auxiliaryBarVisible && claudeVSCodeSidebar.visible"
 	},
-	{
-		"key": "cmd+.",
-		"command": "workbench.action.chat.openModePicker",
-		"when": "chatIsEnabled && inChatInput"
-	},
-	// Terminal
 	{
 		"key": "ctrl+'",
-		"command": "workbench.action.chat.open",
+		"command": "claude-vscode.focus",
 		"when": "terminalFocus"
 	},
+	{
+		"key": "ctrl+;",
+		"command": "workbench.action.closeAuxiliaryBar",
+		"when": "auxiliaryBarVisible && claudeVSCodeSidebar.visible"
+	},
+	{
+		"key": "ctrl+h",
+		"command": "workbench.action.focusActiveEditorGroup",
+		"when": "!config.claudeCode.useTerminal && !editorTextFocus && !terminalFocus"
+	},
+	// Terminal
 	{
 		"key": "ctrl+shift+;",
 		"command": "workbench.action.createTerminalEditor"
