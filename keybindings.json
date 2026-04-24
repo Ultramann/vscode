@@ -191,17 +191,17 @@
 	{
 		"key": "ctrl+;",
 		"command": "workbench.action.toggleAuxiliaryBar",
-		"when": "!auxiliaryBarVisible"
-	},
-	{
-		"key": "ctrl+;",
-		"command": "workbench.action.closeAuxiliaryBar",
-		"when": "auxiliaryBarFocus"
+		"when": "!auxiliaryBarVisible && !auxiliaryBarFocus"
 	},
 	{
 		"key": "ctrl+;",
 		"command": "workbench.action.focusAuxiliaryBar",
 		"when": "auxiliaryBarVisible && !auxiliaryBarFocus"
+	},
+	{
+		"key": "ctrl+;",
+		"command": "workbench.action.closeAuxiliaryBar",
+		"when": "auxiliaryBarVisible && !editorFocus"
 	},
 	// Chat
 	// {
@@ -220,20 +220,20 @@
 	// 	"when": "terminalFocus"
 	// },
 	// Claude
+	// {
+	// 	"key": "ctrl+'",
+	// 	"command": "terminal.focus",
+	// 	"when": "auxiliaryBarVisible && claudeVSCodeSidebar.visible && !editorFocus"
+	// },
 	{
 		"key": "ctrl+'",
 		"command": "terminal.focus",
-		"when": "auxiliaryBarVisible && claudeVSCodeSidebar.visible"
+		"when": "auxiliaryBarVisible && claudeVSCodeSidebarSecondary.visible && !editorFocus"
 	},
 	{
 		"key": "ctrl+'",
 		"command": "claude-vscode.focus",
-		"when": "terminalFocus"
-	},
-	{
-		"key": "ctrl+;",
-		"command": "workbench.action.closeAuxiliaryBar",
-		"when": "auxiliaryBarVisible && claudeVSCodeSidebar.visible"
+		"when": "terminalFocus || (editorTextFocus && auxiliaryBarVisible && claudeVSCodeSidebarSecondary.visible)"
 	},
 	{
 		"key": "ctrl+h",
